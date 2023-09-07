@@ -1,0 +1,13 @@
+.navi{
+    background-color: wheat;
+    padding: 10px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color: aliceblue; 
+}
