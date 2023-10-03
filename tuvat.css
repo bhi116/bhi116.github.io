@@ -7,14 +7,22 @@
 }
 
 body{
-    min-height: 100vh;
+   background-color: black;
+}
+
+.tausta {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 50vh;
     background: url('hptie.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .header{
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -56,4 +64,116 @@ body{
 
 .navi a:hover::before{
     width: 100%;
+}
+
+.container {
+    display: grid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-template-columns: auto auto auto;
+    background-color: transparent;
+    padding: 10px;
+  }
+
+.item {
+    margin: auto;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .item1 {
+    margin: auto;
+    background-color: transparent;
+    padding: 20px;
+    color: rgb(204, 7, 7);
+    font-size: 30px;
+    text-align: center;
+  }
+  .item2 {
+    margin: auto;
+    background-color: transparent;
+    padding: 20px;
+    color: rgb(11, 151, 11);
+    font-size: 30px;
+    text-align: center;
+  }
+  .item3 {
+    margin: auto;
+    background-color: transparent;
+    padding: 20px;
+    color: rgb(255, 255, 0);
+    font-size: 30px;
+    text-align: center;
+  }
+  .item4 {
+    margin: auto;
+    background-color: transparent;
+    padding: 20px;
+    color: rgb(15, 15, 162);
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .testi {
+    margin: auto;
+    padding: 60px;
+    color: white;
+    text-align: center;
+  }
+
+
+/* CSS */
+.button-1 {
+  background-color: rgb(255, 255, 101);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin-top: 20px;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: rgb(186, 186, 57);
+}
+
+  footer {
+    padding: 60px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+   
+  }
+
+  footer a{
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 20px;
+  }
+footer a:hover {
+    color: yellow;
+    transition: .4s ease-in-out;
+    
 }
