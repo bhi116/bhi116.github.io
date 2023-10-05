@@ -7,14 +7,22 @@
 }
 
 body{
-    min-height: 100vh;
+   background-color: black;
+}
+
+.tausta {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 50vh;
     background: url('hptrain.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .header{
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -56,4 +64,24 @@ body{
 
 .navi a:hover::before{
     width: 100%;
+}
+
+.spells {
+    color: white;
+    margin: 20px;
+}
+
+table, th, td {
+    border: 1px solid rgb(154, 153, 153);
+}
+table {
+    margin: auto;
+    width: 500px;
+    font-size: 18px;
+    align-items: center;
+
+}
+
+th, td {
+    padding: 15px;
 }
