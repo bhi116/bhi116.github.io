@@ -114,6 +114,9 @@ footer a:hover {
     color: yellow;
     transition: .4s ease-in-out;  
 }
+.mobile a{
+  display: none;
+}
 
 @media only screen and (max-width: 1400px){
   .container2{
@@ -169,19 +172,41 @@ footer a:hover {
   } 
 }
   
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 560px) {
   .logo {
     font-size: 25px;
   }
   .navi a{
-    margin-left: 5px;
+    display: none;
   }
   .item p{
     font-size: 15px;
   }
   .item2 img, .item2 iframe{
-    margin-left: 70px;
-    height: 220px;
-    width: 70%;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+  }
+  
+  footer a{
+    font-size: 14px;
+    display: inline;
+    margin: auto;
+    margin-right: 10%;
+  }
+  .mobile a{
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    display: block;
+    padding: 6px;
+    margin-top: 10px;
+    width: 70px;
+    text-align: center;
+    font-weight: 500;
+  }
+  .mobile a:hover{
+    color: yellow;
+    transition: .4s ease-in-out;
   }
 }

@@ -91,11 +91,13 @@ table {
 th, td {
     padding: 15px;
 }
-
-p {
+.tietoa{
     color: white;
     margin: 50px;
     text-align: center;
+}
+p {
+    all: inherit;
 }
 .tietoa a {
     color: yellow;
@@ -104,7 +106,7 @@ p {
     color: green;
 }
 .tietoa a:visited {
-    color: red;
+    color: blue;
 }
 
 footer {
@@ -125,8 +127,11 @@ footer {
 footer a:hover {
     color: yellow;
     transition: .4s ease-in-out;
-    
 }
+.mobile a{
+    display: none;
+}
+
 @media only screen and (max-width: 700px) {
     .responsive {
       width: 49.99999%;
@@ -146,18 +151,47 @@ footer a:hover {
     .header {
       padding: 20px 20px;
     }
+   
 }
     @media only screen and (max-width: 560px) {
       table {
-        font-size: 12px;
-        width: 380px;
+        font-size: 10px;
+        width: 20%;
+      }
+      th, td{
+        padding: 2px;
+      }
+      .navi a{
+        display: none;
+      }
+      .mobile a{
+        text-decoration: none;
+        color: white;
+        margin: auto;
+        display: block;
+        padding: 6px;
+        margin-top: 10px;
+        width: 70px;
+        text-align: center;
+        font-weight: 500;
+      }
+      .mobile a:hover{
+        color: yellow;
+        transition: .4s ease-in-out;
       }
     }
   @media only screen and (max-width: 550px) {
     .logo {
         font-size: 25px;
     }
-    .navi a{
-      margin-left: 5px;
+    .tietoa{
+        font-size: 15px;
+        margin: 30px 10px;
     }
+    footer a{
+        font-size: 14px;
+        display: inline;
+        margin: auto;
+        margin-right: 10%;
+      }
 }

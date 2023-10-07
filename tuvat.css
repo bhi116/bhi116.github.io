@@ -160,7 +160,6 @@ body{
   transition: color 100ms;
   vertical-align: baseline;
   user-select: none;
-  -webkit-user-select: none;
   touch-action: manipulation;
 }
 
@@ -197,7 +196,9 @@ body{
 footer a:hover {
     color: yellow;
     transition: .4s ease-in-out;
-    
+}
+.mobile a{
+  display: none;
 }
 @media only screen and (max-width: 1300px){
   .container{
@@ -242,16 +243,46 @@ footer a:hover {
   
 }
   
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 560px) {
  
   .logo {
     font-size: 25px;
   }
   .navi a{
-    margin-left: 5px;
-  }
+    display: none;
+  } 
   ul li{
-    font-size: 18px;
+    font-size: 14px;
   }
-
+  .item h1{
+    font-size: 24px;
+    padding-top: 20px;
+  }
+  .testi{
+    padding: 10px;
+  }
+  .item{
+    padding: 5px;
+  }
+  .mobile a{
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    display: block;
+    padding: 6px;
+    margin-top: 10px;
+    width: 70px;
+    text-align: center;
+    font-weight: 500;
+  }
+  .mobile a:hover{
+    color: yellow;
+    transition: .4s ease-in-out;
+  }
+  footer a{
+    font-size: 14px;
+    display: inline;
+    margin: auto;
+    margin-right: 10%;
+  }
 }
