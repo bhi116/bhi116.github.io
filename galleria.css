@@ -96,6 +96,7 @@ div.gallery {
 
   footer {
     padding: 60px;
+    padding-right: 25px;
     float: left;
     width: 100%;
     height: 50px;
@@ -118,10 +119,31 @@ footer a:hover {
       width: 49.99999%;
       margin: 6px 0;
     }
+    
   }
+
+  @media only screen and (max-width: 900px){
+    .navi a {
+      font-size: 18px;
+      margin-left: 10px;
+    }
+    .logo {
+      font-size: 30px;
+    }
+    .header {
+      padding: 20px 20px;
+    }
+    }
   
-  @media only screen and (max-width: 500px) {
+  
+  @media only screen and (max-width: 550px) {
     .responsive {
       width: 100%;
     }
-  }
+    .logo {
+      font-size: 25px;
+    }
+    .navi a{
+      margin-left: 5px;
+    }
+}
