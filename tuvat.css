@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Sen', sans-serif;
 
 }
 
@@ -35,7 +35,7 @@ body{
 }
 
 .logo{
-    font-size: 32px;
+    font-size: 34px;
     color: white;
     text-decoration: none;
     font-weight: 700;
@@ -43,7 +43,7 @@ body{
 
 .navi a{
     position: relative;
-    font-size: 18px;
+    font-size: 22px;
     color: white;
     font-weight: 500;
     text-decoration: none;
@@ -66,6 +66,13 @@ body{
     width: 100%;
 }
 
+.otsikko {
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 40px;
+}
+
 .container {
     display: grid;
     margin-top: 20px;
@@ -76,45 +83,51 @@ body{
   }
 
 .item {
-    margin: auto;
-    padding: 20px;
+  margin: auto;
+  background-color: transparent;
+  padding: 20px;
+  color: white;
   }
+
+ ul, li {
+  list-style-type: none;
+  font-size: 25px;
+  padding-top: 10px;
+ }
+
 
   h1 {
     font-size: 35px;
+    text-align: center;
   }
 
-  .item1 {
-    margin: auto;
-    background-color: transparent;
-    padding: 20px;
-    color: rgb(204, 7, 7);
-    font-size: 30px;
-    text-align: center;
+  .item1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 15px red;
+    border-radius: 20px;
   }
-  .item2 {
-    margin: auto;
-    background-color: transparent;
-    padding: 20px;
-    color: rgb(11, 151, 11);
-    font-size: 30px;
-    text-align: center;
+  .item2 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 15px green;
+    border-radius: 20px;
   }
-  .item3 {
-    margin: auto;
-    background-color: transparent;
-    padding: 20px;
-    color: rgb(255, 255, 0);
-    font-size: 30px;
-    text-align: center;
+  .item3 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 15px yellow;
+    border-radius: 20px;
   }
-  .item4 {
-    margin: auto;
-    background-color: transparent;
-    padding: 20px;
-    color: rgb(15, 15, 162);
-    font-size: 30px;
-    text-align: center;
+  .item4 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 15px blue;
+    border-radius: 20px;
   }
 
   .testi {
@@ -127,11 +140,11 @@ body{
 
 /* CSS */
 .button-1 {
-  background-color: rgb(255, 255, 101);
+  background-color: transparent;
   border-radius: 8px;
-  border-style: none;
+  border: 2px solid yellow;
   box-sizing: border-box;
-  color: black;
+  color: white;
   cursor: pointer;
   display: inline-block;
   font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -155,7 +168,16 @@ body{
 
 .button-1:hover,
 .button-1:focus {
-  background-color: rgb(186, 186, 57);
+  background-color: yellow;
+  transition: .7s ease-in-out;
+  color: black;
+  animation: hehku 4.5s infinite;
+}
+
+@keyframes hehku {
+  0% {box-shadow: 0px 0px 0px yellow;}
+  50% {box-shadow: 1px 1px 30px yellow;}
+  100% {box-shadow: 0px 0px 0px yellow;}
 }
 
   footer {
