@@ -163,8 +163,7 @@ body{
   touch-action: manipulation;
 }
 
-.button-1:hover,
-.button-1:focus {
+.button-1:hover {
   background-color: yellow;
   transition: .7s ease-in-out;
   color: black;
