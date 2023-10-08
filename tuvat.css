@@ -253,16 +253,21 @@ footer a:hover {
   } 
   ul li{
     font-size: 14px;
+    text-align: center;
   }
   .item h1{
     font-size: 24px;
-    padding-top: 20px;
+    margin-top: 30px;
   }
   .testi{
     padding: 10px;
   }
   .item{
     padding: 5px;
+  }
+  .item1 img, .item2 img, .item3 img, .item4 img{
+    width: 80%;
+    height: 80%;
   }
   .mobile a{
     text-decoration: none;
